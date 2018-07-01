@@ -1,0 +1,32 @@
+/*
+ * 파일명: InputTest.java 
+ * 작성일: 2018.3.15
+ * 작성자: 홍길동
+ * 내용:  Scanner 클래스를 이용한 입력을 연습하는 프로그램
+ */
+
+import java.util.Scanner;
+
+public class InputTest {
+	public static void main(String[] args) {
+		System.out.println("lab2_1: 홍길동\n");
+
+		// Scanner형 변수 input에 키보드 입력을 위한 Scanner 객체 생성하여 지정
+		Scanner input = new Scanner(System.in);
+
+		// 성명, 나이, 성적평점평균을 입력받음
+		System.out.print("성명 입력: ");
+		String name = input.nextLine();
+
+		System.out.print("나이 입력: ");
+		int age = input.nextInt();
+
+		System.out.print("성적평점평균 입력: ");
+		double gradePointAverage = input.nextDouble();
+
+		// 성명, 나이, 성적평점평균을 출력
+		System.out.println("\n성명 = " + name);
+		System.out.println("나이 = " + age);
+		System.out.println("성적평점평균 = " + gradePointAverage);
+	}
+}
